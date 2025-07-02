@@ -12,7 +12,7 @@ class  ProfilePage(BasePage):
         super().__init__(driver)
         self.url = Urls.profile_page_url
         self.locators = ProfilePageLocators()
-       # self.locators_login_page = LoginPageLocators()
+        self.locators_login_page = LoginPageLocators()
 
     @allure.step("Проверка текста на странице профиля")
     def is_profile_info_text_correct(self): # Проверяет, что текст в профиле соответствует ожидаемому
